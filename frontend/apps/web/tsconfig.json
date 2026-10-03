@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@aapg/shared": ["../../packages/shared/src/index.ts"],
+      "@aapg/correlation": ["../../packages/correlation/src/index.ts"]
+    }
+  },
+  "include": ["src"]
+}

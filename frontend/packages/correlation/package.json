@@ -1,0 +1,26 @@
+{
+  "name": "@aapg/correlation",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic cyber-to-financial correlation. No AI and no AWS SDK.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.typecheck.json && tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@aapg/shared": "0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

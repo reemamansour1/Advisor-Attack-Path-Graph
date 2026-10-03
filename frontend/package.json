@@ -1,0 +1,28 @@
+{
+  "name": "advisor-attack-path-graph",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Hackathon prototype that correlates synthetic cybersecurity events with advisor-client financial exposure.",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "infrastructure"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w @aapg/web",
+    "build": "npm run build -w @aapg/shared && npm run build -w @aapg/correlation && npm run build -w @aapg/infrastructure && npm run build -w @aapg/web",
+    "test": "npm run test -w @aapg/correlation",
+    "lint": "eslint ."
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.4.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.44.0"
+  }
+}

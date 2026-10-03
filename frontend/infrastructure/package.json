@@ -1,0 +1,18 @@
+{
+  "name": "@aapg/infrastructure",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "CDK stack skeletons. This package does not deploy or create AWS resources.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.214.0",
+    "constructs": "^10.4.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
